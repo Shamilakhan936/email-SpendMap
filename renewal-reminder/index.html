@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendMap - Smart Expense Management</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style type="text/css">
+        @media only screen and (max-width: 600px) {
+            .container { width: 100% !important; }
+            .header-padding { padding: 30px 20px 25px !important; }
+            .logo-img { height: 35px !important; }
+            .main-title { font-size: 24px !important; }
+            .subtitle { font-size: 16px !important; margin-bottom: 30px !important; }
+            .welcome-icon-container { width: 100px !important; height: 100px !important; margin-bottom: 20px !important; }
+            .welcome-icon { width: 50px !important; height: 50px !important; }
+            .get-started-btn { width: 200px !important; padding: 12px 0 !important; font-size: 16px !important; }
+            .feature-item { margin-bottom: 15px !important; }
+            .footer-padding { padding: 30px 20px !important; }
+        }
+        
+        /* Button hover effects */
+        .access-dashboard-btn:hover {
+            background: linear-gradient(135deg, #5A1FC7 0%, #A03DD6 100%) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(107, 38, 217, 0.4) !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .manage-billing-btn:hover {
+            border-color: #8B5CF6 !important;
+            background-color: rgba(139, 92, 246, 0.1) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.3) !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .access-dashboard-btn, .manage-billing-btn {
+            transition: all 0.3s ease !important;
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f5f5f5; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f5f5f5; padding: 20px 0;">
+        <tr>
+            <td align="center">
+                <table class="container" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width: 600px; background-color: #10141B; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);">
+                    
+                    <tr>
+                        <td class="header-padding" style="text-align: center; padding: 40px 40px 40px; background: #10141B;">
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 30px; margin-top: 10px;">
+                                <tr>
+                                    <td align="center">
+                                        <img class="logo-img" src="../assets/icons/SpendMap.png" alt="SpendMap" style="height: 55px; width: auto; display: block; margin: 0 auto;">
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <h1 class="main-title" style="color: #ffffff; font-size: 36px; font-weight: 700; margin: 0 0 12px 0; line-height: 1.3; max-width: 475px; margin-left: auto; margin-right: auto;">Premium Renewal Notice</h1>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 30px;">
+                                <tr>
+                                    <td align="center">
+                                        <table class="welcome-icon-container" cellpadding="0" cellspacing="0" border="0" style="width: 153px; height: 113px; border-radius: 12px; margin: 0 auto 10px; background: #1C222F; border: 1px solid #29303D;">
+                                            <tr>
+                                                <td align="center" valign="middle">
+                                                    <img src="../assets/icons/clock.svg" alt="Clock Icon" style="width: 70px; height: 70px;" class="welcome-icon" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <h2 style="color: #ffffff; font-size: 30px; font-weight: bold; margin: 10px 0 10px 0;">Renewal Reminder</h2>
+                                        <p style="color: #98A1B3; font-size: 20px; line-height: 1.5; margin: 0 0 20px 0; max-width: 500px; margin-left: auto; margin-right: auto;">Your subscription will renew soon</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Automatic Renewal Section -->
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 40px; margin-top: 40px;">
+                                <tr>
+                                    <td align="center">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="500" style="width: 500px; margin: 0 auto; background-color: #1A202B; border-radius: 12px; border: 1px solid #29303D; overflow: hidden;">
+                                            <tr>
+                                                <td align="center" style="padding: 20px 30px;">
+                                                    <!-- Calendar Icon -->
+                                                    <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 15px;">
+                                                        <tr>
+                                                            <td align="center" valign="middle" style="width: 60px; height: 60px; ">
+                                                                <img src="../assets/icons/calender.svg" alt="Calendar" style="width: 70px; height: 70px;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <h3 style="color: #ffffff; font-size: 16px; font-weight: 700; margin: 0 0 8px 0;">Automatic Renewal in DAYS10 to</h3>
+                                                    <h3 style="color: #ffffff; font-size: 16px; font-weight: 700; margin: 0 0 8px 0;">14 Days</h3>
+                                                    <h2 style="color: #ffffff; font-size: 24px; font-weight: bold; margin: 10px 0 15px 0;">06 - 02 - 25</h2>
+                                                    <p style="color: #ffffff; font-size: 14px; margin: 0; line-height: 1.5;">
+                                                        Your SpendMap Akeen subscription will automatically renew on the date above. We'll charge 500 dollars to your Paypal to continue your premium expense tracking.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 500px; margin: 0 auto 40px; background-color: #1A202B; border-radius: 12px; border: 1px solid #29303D; overflow: hidden;">
+                                <!-- Current Plan Row -->
+                                <tr>
+                                    <td colspan="2" style="padding: 0 40px;">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding: 15px 0; color: #ffffff; font-size: 24px; font-weight: 400; border-bottom: 1px solid #ffffff; text-align: left;">Current Plan</td>
+                                                <td style="padding: 15px 0; text-align: right; border-bottom: 1px solid #ffffff;">
+                                                    <span style="background: linear-gradient(135deg, #6B26D9 0%, #B852E0 100%); color: #ffffff; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 600;">Premium Plan</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Billing Cycle Row -->
+                                <tr>
+                                    <td colspan="2" style="padding: 0 40px;">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding: 15px 0; color: #ffffff; font-size: 24px; font-weight: 400; border-bottom: 1px solid #ffffff; text-align: left;">Billing Cycle</td>
+                                                <td style="padding: 15px 0; color: #ffffff; font-size: 24px; font-weight: 400; text-align: right; border-bottom: 1px solid #ffffff;">5 Months</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Renewal Amount Row -->
+                                <tr>
+                                    <td colspan="2" style="padding: 0 40px;">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding: 15px 0; color: #ffffff; font-size: 24px; font-weight: 400; border-bottom: 1px solid #ffffff; text-align: left;">Renewal Amount</td>
+                                                <td style="padding: 15px 0; color: #ffffff; font-size: 24px; font-weight: 400; text-align: right; border-bottom: 1px solid #ffffff;">$500</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Payment Method Row -->
+                                <tr>
+                                    <td colspan="2" style="padding: 0 40px;">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding: 15px 0; color: #ffffff; font-size: 24px; font-weight: 400; text-align: left;">Payment Method</td>
+                                                <td style="padding: 15px 0; color: #ffffff; font-size: 24px; font-weight: 400; text-align: right;">Paypal</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            
+                            <!-- Need to Make Changes Section -->
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 40px;">
+                                <tr>
+                                    <td align="center">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="500" style="width: 500px; margin: 0 auto; background-color: #1A202B; border-radius: 12px; padding: 42px 15px; border: 1px solid #29303D; overflow: hidden;">
+                                            <tr>
+                                                <td align="center" style="padding: 20px 30px;">
+                                                    <h3 style="color: #ffffff; font-size: 18px; font-weight: 600; margin: 0 0 24px 0;">Need to Make Changes?</h3>
+                                                    <p style="color: #ffffff; font-size: 14px; margin: 0 0 24px 0; line-height: 1.5;">
+                                                        You can update your payment method, change your plan, or cancel your subscription anytime before the renewal date.
+                                                    </p>
+                                                    <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                                                        <tr>
+                                                            <td style="padding-right: 10px;">
+                                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td class="access-dashboard-btn" style="background: linear-gradient(135deg, #6B26D9 0%, #B852E0 100%); cursor: pointer; border-radius: 12px; width: 180px; text-align: center; padding: 30px 20px;">
+                                                                            <a href="#" style="color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; display: block;">Access Dashboard</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td style="padding-left: 10px;">
+                                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                        <td class="manage-billing-btn" style="border: 1px solid #6B26D9; cursor: pointer; border-radius: 12px; width: 180px; text-align: center; padding: 30px 20px;">
+                                                                            <a href="#" style="color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; display: block;">Manage Billing</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <p style="color: #ffffff; font-size: 18px; line-height: 1.5; text-align: center; margin: 0 0 0px 0; max-width: 502px; margin-left: auto; margin-right: auto;">
+                                            This is a friendly reminder about your upcoming subscription renewal. If you have any questions or concerns, please contact our support team. We appreciate your continued business!
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="footer-padding" style="padding: 45px 30px; text-align: center; border-top: 1px solid #29303D;">
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 15px;">
+                                <tr>
+                                    <td align="center">
+                                        <img src="../assets/icons/SpendMap.png" alt="SpendMap" style="height: 45px; width: auto; display: block; margin: 0 auto;">
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <p style="color: #98A1B3; font-size: 22px; margin: 0 0 30px 0; line-height: 1.3;">
+                                            The smart way to track your spending and<br>
+                                            achieve your financial goals.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="margin-bottom: 25px;">
+                                        <a href="#" style="color: #ffffff; text-decoration: none; font-size: 20px; margin: 0 25px;">About</a>
+                                        <a href="#" style="color: #ffffff; text-decoration: none; font-size: 20px; margin: 0 25px;">Privacy</a>
+                                        <a href="#" style="color: #ffffff; text-decoration: none; font-size: 20px; margin: 0 25px;">Support</a>
+                                        <a href="#" style="color: #ffffff; text-decoration: none; font-size: 20px; margin: 0 25px;">Unsubscribe</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <p style="color: #98A1B3; font-size: 20px; margin: 40px 0 0 0;">© 2025 SpendMap. All rights reserved.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
